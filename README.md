@@ -76,28 +76,3 @@ project-root/
 │
 ├── requirements.txt        # 필요한 패키지 목록
 └── README.md               # 프로젝트 설명 파일
-🚀 설치 및 사용 방법
-저장소 클론
-
-bash
-코드 복사
-git clone https://github.com/username/wasp-monitoring.git
-cd wasp-monitoring
-필요한 패키지 설치
-
-bash
-코드 복사
-pip install -r requirements.txt
-모델 학습 (선택 사항)
-
-bash
-코드 복사
-python src/train.py --data ./data/dataset.csv
-실시간 모니터링 실행
-
-bash
-코드 복사
-python src/monitor.py --camera 0
-📊 데이터셋
-프로젝트에서 사용된 데이터셋은 Kaggle Wasp Dataset에서 다운로드할 수 있습니다.
-추가로, 사용자는 자체적으로 데이터를 수집하여 시스템에 적용할 수 있습니다.
