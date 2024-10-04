@@ -44,12 +44,13 @@ pip install -r requirements.txt
 python src/train.py --data ./data/dataset.csv
 ```
 
+4. 실시간 모니터링 실행
+```
+python src/monitor.py --camera 0
+```
+
 ---
 
 ## 📊 데이터셋
 프로젝트에서 사용된 데이터셋은 Kaggle Wasp Dataset에서 다운로드할 수 있습니다.
 추가로, 사용자는 자체적으로 데이터를 수집하여 시스템에 적용할 수 있습니다.
-4. 실시간 모니터링 실행
-```
-python src/monitor.py --camera 0
-```
