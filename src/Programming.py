@@ -2,7 +2,7 @@
 #!/bin/sh
 
 echo Hello World
-
+------------------------------------
 # ex3-1.sh
 #!/bin/sh
 
@@ -13,13 +13,13 @@ do
         echo "hello world";
         i=$((i + 1));
 done
-
+------------------------------------
 # ex3-2.sh
 #!/bin/sh
 
 [ "$#" -eq 3 ] || exit 1
 echo $(( $1 $2 $3 ))
-
+------------------------------------
 # ex3-3.sh
 #!/bin/sh
 
@@ -35,7 +35,7 @@ elif [ "$(echo "$bmi >= 18.5 && $bmi < 23" | bc)" -eq 1 ]; then
 else
     echo "과체중입니다."
 fi
-
+------------------------------------
 # ex3-4.sh
 #!/bin/sh
 
@@ -53,7 +53,7 @@ case "$answer" in
         echo "yes or no로 입력해 주세요."
         ;;
 esac
-
+------------------------------------
 # ex3-5.sh
 #!/bin/sh
 
@@ -64,7 +64,7 @@ my_ls() {
 echo "프로그램을 시작합니다."
 
 my_ls "$@"
-
+------------------------------------
 # ex3-6.sh
 #!/bin/sh
 
@@ -84,7 +84,7 @@ done
 tar -cvf files.tar file*.txt
 
 echo "$FOLDER_NAME files.tar 압축 완료"
-
+------------------------------------
 # ex3-7.sh
 #!/bin/sh
 
@@ -102,7 +102,7 @@ done
 for i in $(seq 0 4); do
     mkdir -p "file$i"
     ln -s "$(pwd)/file$i.txt" "file$i/file$i.txt"
-
+------------------------------------
 # ex3-8.sh
 #!/bin/sh
 
@@ -119,7 +119,7 @@ if ! grep -q "\-\-my friends\-\-" DB.txt; then
 fi
 
 echo "$name $info" >> DB.txt
-
+------------------------------------
 # ex3-9.sh
 #!/bin/sh
 
